@@ -1,5 +1,8 @@
+import { Http, HttpModule } from '@angular/http';
+import { SearcherService } from './services/searcher.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
@@ -10,9 +13,13 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [
+    SearcherService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,32 @@
+.container-fluid {
+  background-color: #EE5A24;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h1 {
+  margin: 45px;
+  color: white;
+}
+
+.form-group, .list-group-container {
+  width: 50%;
+  margin: 0;
+}
+
+.list-group-item {
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  font-size: .8em;
+  cursor: pointer;
+}
+.list-group-item:hover {
+  background-color: lightgray;
+}
+
+span.brand-name {
+  font-style: italic;
+  font-weight: bold;
+}
